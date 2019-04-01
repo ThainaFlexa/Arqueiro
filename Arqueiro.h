@@ -10,8 +10,9 @@ class Arqueiro
 
 public:
     Arqueiro();
-    int numeroDeJogadas();
     ~Arqueiro();
+    
+    int numeroDeJogadas();
     
 private:
     int pontuacao;
