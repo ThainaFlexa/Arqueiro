@@ -3,14 +3,18 @@
 #include <string>
 using std::string;
 
+#include<iostream>
+using std::cout;
 
 class Arqueiro
 {
 
 
 public:
-    Arqueiro();
+    Arqueiro( int );
     ~Arqueiro();
+    
+    void setPontos( int );
     
     int numeroDeJogadas();
     

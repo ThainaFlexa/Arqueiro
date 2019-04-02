@@ -3,6 +3,9 @@
 
 int main(int argc, char **argv)
 {
-	printf("hello world\n");
+	printf("Codigo com sucesso!\n");
+    
+    Arqueiro arq1( 20 );
+    
 	return 0;
 }
