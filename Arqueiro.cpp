@@ -3,8 +3,14 @@
 Arqueiro::Arqueiro( int pontos )
 {
     
-    setPontos( pontos );
+    setJogada( pontos );
     
+    
+}
+
+Arqueiro::Arqueiro( string nome ){
+    
+    setJogada( nome );
     
 }
 
@@ -12,7 +18,7 @@ Arqueiro::~Arqueiro()
 {
 }
 
-void Arqueiro::setPontos( int pontos )
+void Arqueiro::setJogada( int pontos )
 {
     if( pontos > 0  &&  pontos < 100 )
     {
@@ -22,4 +28,11 @@ void Arqueiro::setPontos( int pontos )
     else
         pontuacao = 0;
         
+}
+
+void Arqueiro::setJogada( string nome ){
+    cout << "Insira seu nome:";
+    cin >> nome;
+    id = nome;
+    cout << "Nome inserido com sucesso.";
 }

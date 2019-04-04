@@ -4,6 +4,7 @@
 using std::string;
 
 #include<iostream>
+using std::cin;
 using std::cout;
 
 class Arqueiro
@@ -12,15 +13,18 @@ class Arqueiro
 
 public:
     Arqueiro( int );
+    Arqueiro( string );
     ~Arqueiro();
     
-    void setPontos( int );
+    void setJogada ( string );
     
-    int numeroDeJogadas();
+    void setJogada( int );
+    
+    int jogar( int );
     
 private:
     int pontuacao;
-
+    string id;
 
 };
 
