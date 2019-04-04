@@ -31,8 +31,8 @@ void Arqueiro::setJogada( int pontos )
 }
 
 void Arqueiro::setJogada( string nome ){
-    cout << "Insira seu nome:";
+    cout << "Insira seu nome de usuario:";
     cin >> nome;
     id = nome;
-    cout << "Nome inserido com sucesso.";
+    cout << "Nome inserido com sucesso!\n";
 }

@@ -22,6 +22,8 @@ public:
     
     int jogar( int );
     
+    string jogar (string);
+    
 private:
     int pontuacao;
     string id;

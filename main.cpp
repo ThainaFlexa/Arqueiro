@@ -7,7 +7,7 @@ int main(int argc, char **argv)
     
     Arqueiro arq1( 20 );
     
-    Arqueiro arq2 (" ");
+    Arqueiro arq2 ("");
     
 	return 0;
 }
