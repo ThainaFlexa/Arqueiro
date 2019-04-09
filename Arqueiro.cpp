@@ -8,7 +8,7 @@ Arqueiro::Arqueiro( int pontos )
     
 }
 
-Arqueiro::Arqueiro( string nome ){
+Arqueiro::Arqueiro( const string &nome ){
     
     setJogada( nome );
     
@@ -30,9 +30,7 @@ void Arqueiro::setJogada( int pontos )
         
 }
 
-void Arqueiro::setJogada( string nome ){
-    cout << "Insira seu nome de usuario:";
-    cin >> nome;
+void Arqueiro::setJogada(const string &nome){
     id = nome;
     cout << "Nome inserido com sucesso!\n";
 }

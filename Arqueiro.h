@@ -13,10 +13,10 @@ class Arqueiro
 
 public:
     Arqueiro( int );
-    Arqueiro( string );
+    Arqueiro( const string & );
     ~Arqueiro();
     
-    void setJogada ( string );
+    void setJogada ( const string & );
     
     void setJogada( int );
     
