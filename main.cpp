@@ -11,13 +11,44 @@ int main(int argc, char **argv)
 	printf("Codigo com sucesso!\n");
     
     Arqueiro arq1( 20 );    
-    Arqueiro arq2(" ");
+    Arqueiro arq2("");
     string nome;
-    
-    cout << "Insira seu nome de usuario:";
+
+    cout << "\nInsira seu nome de usuario:";
     cin >> nome;
-    
+
     arq2.setJogada( nome );
+    
+    int modelo;
+    
+    cout << "\nInsira o PIN do aparelho a ser habilitado: ";
+    cin >> modelo;
+    
+    arq1.registroAparelho( modelo );
+    
+    int cat;
+    
+    cout << "\nInsira sua categoria no jogo: ";
+    cout<< " \n1-Iniciante" <<'\n' <<"2-Mediano" << '\n' <<  "3-Experiente" << '\n';
+    cin >> cat;
+    
+    arq1.selecionarCategoria( cat );
+    
+    float valor;
+    
+    cout << "\nVoce precisa comprar os primeiros arcos para comecar a jogar!\n";
+    cout<< " \n 70 arcos - R$ 29,50" <<'\n' <<"40 arcos - R$ 19,00" << '\n' << "Insira o valor do pacote desejado: R$ ";
+    cin >> valor;
+    
+    arq1.adquirirArcos( valor );
+    
+    int verifica;
+    
+    cout << "Nos confirme novamente seu numero PIN para continuar o processo [Voce eh um robo?]: \n";
+    cin >> verifica;
+    
+    arq1.confirmaCompra( verifica );
+    
     
 	return 0;
 }

@@ -18,15 +18,27 @@ public:
     
     void setJogada ( const string & );
     
+    void confirmaCompra (const int);
+    
     void setJogada( int );
     
     int jogar( int );
     
     string jogar (string);
     
+    void registroAparelho (int);
+    
+    void adquirirArcos(float);
+    
+    void selecionarCategoria (int);
+    
+    
 private:
     int pontuacao;
     string id;
+    int aparelho;
+    float combos;
+    int categoria;
 
 };
 
