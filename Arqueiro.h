@@ -18,7 +18,7 @@ public:
     
     void setJogada ( const string & );
     
-    void confirmaCompra (const int);
+    void confirmarCompra (const int);
     
     void setJogada( int );
     
@@ -26,7 +26,7 @@ public:
     
     string jogar (string);
     
-    void registroAparelho (int);
+    void registrarAparelho (int);
     
     void adquirirArcos(float);
     

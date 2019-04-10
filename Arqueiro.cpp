@@ -35,7 +35,7 @@ void Arqueiro::setJogada(const string &nome){
     cout << "Nome inserido com sucesso!\n";
 }
 
-void Arqueiro::registroAparelho(int modelo){
+void Arqueiro::registrarAparelho(int modelo){
     aparelho = modelo;
     cout<<"Aparelho habilitado com sucesso!\n";
 }
@@ -60,7 +60,7 @@ void Arqueiro::adquirirArcos(float valor){
     else
         cout << "Pacote de valor nao disponivel. Sua compra nao eh possivel. Porem precisamos confirmar se eh voce realmente.\n";
 }
-void Arqueiro::confirmaCompra(const int verifica){
+void Arqueiro::confirmarCompra(const int verifica){
     if(verifica == aparelho)
     {
         cout << "\nVerificacao realizada\n" << "\nPIN DE NUMERO " << aparelho << " AUTORIZADO. DIVIRTA-SE!" <<'\n' ;

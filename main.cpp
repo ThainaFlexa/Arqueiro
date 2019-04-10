@@ -24,7 +24,7 @@ int main(int argc, char **argv)
     cout << "\nInsira o PIN do aparelho a ser habilitado: ";
     cin >> modelo;
     
-    arq1.registroAparelho( modelo );
+    arq1.registrarAparelho( modelo );
     
     int cat;
     
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
     cout << "Nos confirme novamente seu numero PIN para continuar o processo [Voce eh um robo?]: \n";
     cin >> verifica;
     
-    arq1.confirmaCompra( verifica );
+    arq1.confirmarCompra( verifica );
     
     
 	return 0;
