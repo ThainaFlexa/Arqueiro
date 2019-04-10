@@ -34,13 +34,15 @@ int main(int argc, char **argv)
     
     arq1.selecionarCategoria( cat );
     
-    float valor;
+    float valor,pag;
     
     cout << "\nVoce precisa comprar os primeiros arcos para comecar a jogar!\n";
     cout<< " \n 70 arcos - R$ 29,50" <<'\n' <<"40 arcos - R$ 19,00" << '\n' << "Insira o valor do pacote desejado: R$ ";
     cin >> valor;
+    cout << "Modo de pagamento: \n" << "1 - Gerar Boleto\n" << "2 - Cartao Virtual - Debito/Credito \n";
+    cin >> pag;
     
-    arq1.adquirirArcos( valor );
+    arq1.adquirirArcos( valor, pag);
     
     int verifica;
     

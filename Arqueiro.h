@@ -14,6 +14,7 @@ class Arqueiro
 public:
     Arqueiro( int );
     Arqueiro( const string & );
+    Arqueiro ( float , int );
     ~Arqueiro();
     
     void setJogada ( const string & );
@@ -28,7 +29,7 @@ public:
     
     void registrarAparelho (int);
     
-    void adquirirArcos(float);
+    void adquirirArcos(float,int);
     
     void selecionarCategoria (int);
     
@@ -38,6 +39,7 @@ private:
     string id;
     int aparelho;
     float combos;
+    int pagamento;
     int categoria;
 
 };

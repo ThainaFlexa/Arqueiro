@@ -14,6 +14,12 @@ Arqueiro::Arqueiro( const string &nome ){
     
 }
 
+Arqueiro::Arqueiro( float valor, int pag ){
+    
+    adquirirArcos(valor,pag);
+    
+}
+
 Arqueiro::~Arqueiro()
 {
 }
@@ -51,19 +57,20 @@ void Arqueiro::selecionarCategoria(int cat){
     }
 }
 
-void Arqueiro::adquirirArcos(float valor){
-    if (valor == 29.50 || valor == 19.00 )
+void Arqueiro::adquirirArcos(float valor, int pag){
+    if((valor == 29.50 || valor == 19.00) && (pag == 1 || pag == 2))
     {
         combos=valor;
         cout << "Pacote disponibilizado. \n";
+        pagamento=pag;
     }
     else
-        cout << "Pacote de valor nao disponivel. Sua compra nao eh possivel. Porem precisamos confirmar se eh voce realmente.\n";
+        cout << " Pacote de valor nao disponivel ou Forma de pagamento nao aceita.\n Sua compra nao eh possivel. Porem precisamos confirmar se eh voce realmente.\n";
 }
 void Arqueiro::confirmarCompra(const int verifica){
     if(verifica == aparelho)
     {
-        cout << "\nVerificacao realizada\n" << "\nPIN DE NUMERO " << aparelho << " AUTORIZADO. DIVIRTA-SE!" <<'\n' ;
+        cout << "\nVerificacao realizada\n" << "\nPIN DE NUMERO " << aparelho << " AUTORIZADO. JOGO HABILITADO!" <<'\n' ;
     }
     else{
         cout << "\n\nACESSO NAO PERMITIDO. CONFIRMACAO FALHOU.\n";
