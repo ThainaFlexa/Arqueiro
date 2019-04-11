@@ -13,11 +13,20 @@ int main(int argc, char **argv)
     Arqueiro arq1( 20 );    
     Arqueiro arq2("");
     string nome;
+    Arqueiro arq3(1);
+    
+    arq3.addMortos();
+    arq1.addMortos();
+    
+    cout << "Numero total de mortos: " << arq3.getnumerodeMortos();
+
 
     cout << "\nInsira seu nome de usuario:";
     cin >> nome;
 
     arq2.setJogada( nome );
+    
+    
     
     int modelo;
     
@@ -51,6 +60,7 @@ int main(int argc, char **argv)
     
     arq1.confirmarCompra( verifica );
     
+    Arqueiro arq4(arq1);
     
 	return 0;
 }

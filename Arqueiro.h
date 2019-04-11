@@ -15,6 +15,8 @@ public:
     Arqueiro( int );
     Arqueiro( const string & );
     Arqueiro ( float , int );
+    Arqueiro(const Arqueiro &);
+    
     ~Arqueiro();
     
     void setJogada ( const string & );
@@ -33,6 +35,9 @@ public:
     
     void selecionarCategoria (int);
     
+    void addMortos( );
+    
+    int getnumerodeMortos();
     
 private:
     int pontuacao;
@@ -41,7 +46,8 @@ private:
     float combos;
     int pagamento;
     int categoria;
-
+    const static int numerodeFases = 4;
+    static int numerodeMortos;
 };
 
 #endif // ARQUEIRO_H

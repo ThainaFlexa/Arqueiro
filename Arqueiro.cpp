@@ -1,5 +1,7 @@
 #include "Arqueiro.h"
 
+int Arqueiro::numerodeMortos = 0;
+
 Arqueiro::Arqueiro( int pontos )
 {
     
@@ -20,8 +22,31 @@ Arqueiro::Arqueiro( float valor, int pag ){
     
 }
 
+Arqueiro::Arqueiro(const Arqueiro &arq)
+{
+    pontuacao=arq.pontuacao;
+    id=arq.id;
+    aparelho=arq.aparelho;
+    combos=arq.combos;
+    pagamento=arq.pagamento;
+    categoria=arq.categoria;
+}
+
 Arqueiro::~Arqueiro()
 {
+}
+
+int Arqueiro::getnumerodeMortos()
+{
+    
+    return numerodeMortos;
+}
+
+void Arqueiro::addMortos( )
+{
+    numerodeMortos++;
+    
+    cout << "Numero de mortos atualizado com sucesso!\n";
 }
 
 void Arqueiro::setJogada( int pontos )
