@@ -39,7 +39,8 @@ public:
     
     static int getnumerodeMortos();
     
-    int getnumerodeFases();
+    float getversaodoJogo();
+    
     
 private:
     int pontuacao;
@@ -48,7 +49,7 @@ private:
     float combos;
     int pagamento;
     int categoria;
-    const static int numerodeFases = 4;
+    const static float versao = 7.2;
     static int numerodeMortos;
 };
 

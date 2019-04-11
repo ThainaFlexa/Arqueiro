@@ -36,10 +36,10 @@ Arqueiro::~Arqueiro()
 {
 }
 
-int Arqueiro::getnumerodeFases()
+float Arqueiro::getversaodoJogo()
 {
     
-    return numerodeFases;
+    return versao;
 }
 
 int Arqueiro::getnumerodeMortos()

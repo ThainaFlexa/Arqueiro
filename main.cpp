@@ -18,15 +18,14 @@ int main(int argc, char **argv)
     arq1.addMortos();
     arq2.addMortos();
     
-    cout << "\nO jogo possui " << arq1.getnumerodeFases() << " fases." << '\n';
-    
     cout << "Numero total de mortos no jogo: " << Arqueiro::getnumerodeMortos() << '\n';
+    
+    cout << "\nVersao do jogo -- " << arq1.getversaodoJogo() << '\n';
 
     cout << "\nInsira seu nome de usuario:";
     cin >> nome;
 
     arq2.setJogada( nome );
-    
     
     
     int modelo;
