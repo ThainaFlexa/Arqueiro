@@ -36,6 +36,12 @@ Arqueiro::~Arqueiro()
 {
 }
 
+int Arqueiro::getnumerodeFases()
+{
+    
+    return numerodeFases;
+}
+
 int Arqueiro::getnumerodeMortos()
 {
     
@@ -46,15 +52,14 @@ void Arqueiro::addMortos( )
 {
     numerodeMortos++;
     
-    cout << "Numero de mortos atualizado com sucesso!\n";
 }
 
 void Arqueiro::setJogada( int pontos )
 {
-    if( pontos > 0  &&  pontos < 100 )
+    if( pontos > 0  &&  pontos < 100 && pontos != 1)
     {
         pontuacao = pontos;
-        cout << "A pontuacao foi verificada com sucesso\n";
+        cout << "Pontuacao inicial do jogo: " << pontuacao << " vidas." <<'\n';
     }
     else
         pontuacao = 0;
@@ -62,8 +67,10 @@ void Arqueiro::setJogada( int pontos )
 }
 
 void Arqueiro::setJogada(const string &nome){
-    id = nome;
-    cout << "Nome inserido com sucesso!\n";
+    if ( nome != "") {
+        id = nome;
+        cout << "Nome inserido com sucesso!\n";
+    }
 }
 
 void Arqueiro::registrarAparelho(int modelo){

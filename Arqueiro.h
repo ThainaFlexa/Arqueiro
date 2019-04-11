@@ -37,7 +37,9 @@ public:
     
     void addMortos( );
     
-    int getnumerodeMortos();
+    static int getnumerodeMortos();
+    
+    int getnumerodeFases();
     
 private:
     int pontuacao;

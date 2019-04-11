@@ -13,13 +13,14 @@ int main(int argc, char **argv)
     Arqueiro arq1( 20 );    
     Arqueiro arq2("");
     string nome;
-    Arqueiro arq3(1);
+    Arqueiro arq3( 1 );
     
-    arq3.addMortos();
     arq1.addMortos();
+    arq2.addMortos();
     
-    cout << "Numero total de mortos: " << arq3.getnumerodeMortos();
-
+    cout << "\nO jogo possui " << arq1.getnumerodeFases() << " fases." << '\n';
+    
+    cout << "Numero total de mortos no jogo: " << Arqueiro::getnumerodeMortos() << '\n';
 
     cout << "\nInsira seu nome de usuario:";
     cin >> nome;
