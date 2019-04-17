@@ -14,7 +14,7 @@ class Arqueiro
 
     
 public:
-    Arqueiro( int );
+    Arqueiro( int  );
     Arqueiro( const string & );
     Arqueiro ( float , int );
     Arqueiro( const Arqueiro & );

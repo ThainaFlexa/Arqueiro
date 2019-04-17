@@ -19,7 +19,7 @@ Arqueiro::Arqueiro( const string &nome )
     
 }
 
-Arqueiro::Arqueiro( float valor, int pag )
+Arqueiro::Arqueiro( float valor, int pag ) 
 {
     
     adquirirArcos(valor,pag);
