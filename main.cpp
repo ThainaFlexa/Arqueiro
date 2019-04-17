@@ -43,6 +43,11 @@ int main(int argc, char **argv)
     
     arq1.selecionarCategoria( cat );
     
+    
+    cout << "\nInstalando configuracoes...\n" << "\nArmas disponiveis durante o jogo:\n";
+    
+    arq2.mostrarArmas();
+    
     float valor,pag;
     
     cout << "\nVoce precisa comprar os primeiros arcos para comecar a jogar!\n";
@@ -61,6 +66,7 @@ int main(int argc, char **argv)
     arq1.confirmarCompra( verifica );
     
     Arqueiro arq4(arq1);
+
     
 	return 0;
 }

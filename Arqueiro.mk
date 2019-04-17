@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Thaina
-Date                   :=11/04/2019
+Date                   :=17/04/2019
 CodeLitePath           :="C:/Program Files (x86)/CodeL"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files (x86)\CodeL
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Arqueiro.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/Intern.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Arqueiro.cpp$(ObjectSuffix) 
 
 
 
@@ -93,6 +93,14 @@ PreBuild:
 ##
 ## Objects
 ##
+$(IntermediateDirectory)/Intern.cpp$(ObjectSuffix): Intern.cpp $(IntermediateDirectory)/Intern.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Prog2/Repositorios/Jogo/Arqueiro/Intern.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Intern.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Intern.cpp$(DependSuffix): Intern.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Intern.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Intern.cpp$(DependSuffix) -MM Intern.cpp
+
+$(IntermediateDirectory)/Intern.cpp$(PreprocessSuffix): Intern.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Intern.cpp$(PreprocessSuffix) Intern.cpp
+
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Prog2/Repositorios/Jogo/Arqueiro/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp

@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/Arqueiro.cpp.o   
+./Debug/Intern.cpp.o ./Debug/main.cpp.o ./Debug/Arqueiro.cpp.o   

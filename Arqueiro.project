@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="Intern.cpp"/>
+    <File Name="Intern.h"/>
     <File Name="Arqueiro.cpp"/>
     <File Name="Arqueiro.h"/>
     <File Name="main.cpp"/>
