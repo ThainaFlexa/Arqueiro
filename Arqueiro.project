@@ -98,5 +98,9 @@
     <File Name="Arqueiro.cpp"/>
     <File Name="Arqueiro.h"/>
     <File Name="main.cpp"/>
+    <File Name="Arco.h"/>
+    <File Name="Arco.cpp"/>
+    <File Name="Flecha.h"/>
+    <File Name="Flecha.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

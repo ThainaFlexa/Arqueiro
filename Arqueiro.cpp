@@ -2,7 +2,7 @@
 
 int Arqueiro::numerodeMortos = 0;
 
-string Arqueiro::armas[sizeArmas]={"ArcodeDesportivo","ArcoMilitar_Nivel1","ArcoMilitar_Nivel2","FlechaDesportivo","FlechaMilitar_Nivel1","FlechaMilitar_Nivel2"};
+//string Arqueiro::armas[sizeArmas]={"ArcodeDesportivo","ArcoMilitar_Nivel1","ArcoMilitar_Nivel2","FlechaDesportivo","FlechaMilitar_Nivel1","FlechaMilitar_Nivel2"};
 
 Arqueiro::Arqueiro( int pontos )
 {
@@ -14,6 +14,7 @@ Arqueiro::Arqueiro( int pontos )
 
 Arqueiro::Arqueiro( const string &nome )
 {
+    
     
     setJogada( nome );
     
@@ -58,12 +59,12 @@ void Arqueiro::addMortos( )
     
 }
 
-void Arqueiro:: mostrarArmas()
+/*void Arqueiro:: mostrarArmas()
 {
     for(int count=0; count < sizeArmas; count++)
         cout << armas[count] << '\n';
 }
-
+*/
 void Arqueiro::setJogada( int pontos )
 {
     if( pontos > 0  &&  pontos < 100 && pontos != 1)

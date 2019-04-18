@@ -44,9 +44,9 @@ int main(int argc, char **argv)
     arq1.selecionarCategoria( cat );
     
     
-    cout << "\nInstalando configuracoes...\n" << "\nArmas disponiveis durante o jogo:\n";
+    //cout << "\nInstalando configuracoes...\n" << "\nArmas disponiveis durante o jogo:\n";
     
-    arq2.mostrarArmas();
+    //arq2.mostrarArmas();
     
     float valor,pag;
     

@@ -7,7 +7,8 @@ using std::string;
 using std::cin;
 using std::cout;
 
-#include "Intern.h"
+#include "Arco.h"
+#include "Flecha.h"
 
 class Arqueiro
 {
@@ -27,7 +28,7 @@ public:
     
     void setJogada( int );
     
-    int jogar( int );
+    int jogar( );
     
     string jogar (string);
     
@@ -43,7 +44,7 @@ public:
     
     float getversaodoJogo();
     
-    void mostrarArmas();
+    //void mostrarArmas();
     
 private:
     int pontuacao;
@@ -54,8 +55,8 @@ private:
     int categoria;
     const static float versao = 7.2;
     static int numerodeMortos;
-    const static int sizeArmas  = 6;
-    static string armas[sizeArmas];
+    //const static int sizeArmas  = 6;
+    //static string armas[sizeArmas];
 };
 
 #endif // ARQUEIRO_H
