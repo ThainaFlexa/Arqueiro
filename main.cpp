@@ -10,10 +10,10 @@ int main(int argc, char **argv)
 {
 	printf("Codigo com sucesso!\n");
     
-    Arqueiro arq1( 20 );    
+    Arqueiro arq1( 20 , 7.0 , 10.0 );    
     Arqueiro arq2("");
     string nome;
-    Arqueiro arq3( 1 );
+    Arqueiro arq3( 1, 7.0 , 10.0 );
     
     arq1.addMortos();
     arq2.addMortos();

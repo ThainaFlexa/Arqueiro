@@ -11,7 +11,7 @@ Flecha::~Flecha()
 {
 }
 
-void Flecha:: mostrarTiposFlecha()
+void Flecha:: mostrarTipoFlechas()
 {
     for(int cont=0; cont < sizeFlechas; cont++)
         cout << armasFlechas[cont] << '\n';

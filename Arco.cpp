@@ -11,7 +11,7 @@ Arco::~Arco()
 {
 }
 
-void Arco:: mostrarTiposArcos()
+void Arco:: mostrarTipoArcos()
 {
     for(int count=0; count < sizeArcos; count++)
         cout << armasArcos[count] << '\n';

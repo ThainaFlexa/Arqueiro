@@ -14,15 +14,15 @@ Arqueiro::Arqueiro( int pontos, float tamFlecha, float tamArco )
 }
 
 Arqueiro::Arqueiro( const string &nome )
-: flecha_padrao(  )
+: flecha_padrao(  ),  arco_padrao ( )
 {
-    
     
     setJogada( nome );
     
 }
 
-Arqueiro::Arqueiro( float valor, int pag ) 
+Arqueiro::Arqueiro( float valor, int pag )
+: flecha_padrao(  ),  arco_padrao ( )
 {
     
     adquirirArcos(valor,pag);
@@ -30,6 +30,7 @@ Arqueiro::Arqueiro( float valor, int pag )
 }
 
 Arqueiro::Arqueiro(const Arqueiro &arq)
+: flecha_padrao(  ),  arco_padrao ( )
 {
     pontuacao=arq.pontuacao;
     id=arq.id;
