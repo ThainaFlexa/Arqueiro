@@ -4,7 +4,8 @@ int Arqueiro::numerodeMortos = 0;
 
 //string Arqueiro::armas[sizeArmas]={"ArcodeDesportivo","ArcoMilitar_Nivel1","ArcoMilitar_Nivel2","FlechaDesportivo","FlechaMilitar_Nivel1","FlechaMilitar_Nivel2"};
 
-Arqueiro::Arqueiro( int pontos )
+Arqueiro::Arqueiro( int pontos, float tamFlecha, float tamArco )
+: flecha_padrao( tamFlecha ),  arco_padrao ( tamArco )
 {
     
     setJogada( pontos );
@@ -13,6 +14,7 @@ Arqueiro::Arqueiro( int pontos )
 }
 
 Arqueiro::Arqueiro( const string &nome )
+: flecha_padrao(  )
 {
     
     

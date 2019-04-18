@@ -15,7 +15,7 @@ class Arqueiro
 
     
 public:
-    Arqueiro( int  );
+    Arqueiro( int , float , float  );
     Arqueiro( const string & );
     Arqueiro ( float , int );
     Arqueiro( const Arqueiro & );
@@ -57,6 +57,8 @@ private:
     static int numerodeMortos;
     //const static int sizeArmas  = 6;
     //static string armas[sizeArmas];
+    Flecha flecha_padrao;
+    Arco arco_padrao;
 };
 
 #endif // ARQUEIRO_H
